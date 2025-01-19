@@ -32,5 +32,31 @@ public class Main {
 
         System.out.println(t);
 
+        Punto miPunto = new Punto();
+
+        Rectangulo rectangulo1 = new Rectangulo(new Punto(), 3, 1);
+
+        Circulo circulo1 = new Circulo(new Punto(3, 1), 1);
+
+        List<Figura> lista = new ArrayList<>();
+
+        lista.add(rectangulo1);
+        lista.add(circulo1);
+
+        /* for (int i = 0 ; i < lista.size() ; i++) {
+
+        } */
+
+        for (Figura i : lista) {
+            System.out.println(i.perimetro()); // llamada polimórfica
+        }
+
+        System.out.println(rectangulo1.perimetro());
+
+        Punto punto1 = new Punto();
+        Punto punto2 = new Punto(3, 1);
+
+        System.out.println(Geometria.distance(punto1, punto2)); // un ejemplo de static en una función
+
     }
 }

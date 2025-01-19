@@ -1,11 +1,10 @@
 package org.example;
 
-public class Circulo extends Figura {
+public class Circulo implements Figura {
 
     private double radio;
 
-    public Circulo(Punto punto, double radio) {
-        super(punto);
+    public Circulo(double radio) {
         this.radio = radio;
     }
 

@@ -1,12 +1,11 @@
 package org.example;
 
-public class Rectangulo extends Figura {
+public class Rectangulo implements Figura {
 
     private double largo;
     private double ancho;
 
-    public Rectangulo(Punto punto, double largo, double ancho) {
-        super(punto);
+    public Rectangulo(double largo, double ancho) {
         this.largo = largo;
         this.ancho = ancho;
     }

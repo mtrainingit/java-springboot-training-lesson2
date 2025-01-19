@@ -34,9 +34,9 @@ public class Main {
 
         Punto miPunto = new Punto();
 
-        Rectangulo rectangulo1 = new Rectangulo(new Punto(), 3, 1);
+        Rectangulo rectangulo1 = new Rectangulo(3, 1);
 
-        Circulo circulo1 = new Circulo(new Punto(3, 1), 1);
+        Circulo circulo1 = new Circulo(1);
 
         List<Figura> lista = new ArrayList<>();
 
